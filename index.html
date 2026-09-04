@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Road Safety — Australia (Play)</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Road Safety Game — Australia</h1>
+    <p class="tag">Drive on the left. Speed in km/h. Follow signs, stop at crossings, watch school zones.</p>
+  </header>
+
+  <main>
+    <div id="hud">
+      <div>Speed: <span id="speed">0</span> km/h</div>
+      <div>Score: <span id="score">0</span></div>
+      <div>Lives: <span id="lives">3</span></div>
+      <div id="message">Press SPACE to start — use ← → or A/D to steer, S to brake</div>
+    </div>
+
+    <canvas id="game" width="480" height="720" aria-label="Road Safety Game Canvas"></canvas>
+
+    <section id="controls">
+      <button id="startBtn">Start</button>
+      <button id="restartBtn" style="display:none;">Restart</button>
+    </section>
+
+    <section id="instructions">
+      <h2>How to play</h2>
+      <ul>
+        <li>Drive on the left-hand side of the road.</li>
+        <li>Obey speed limits (km/h). School zones and roadworks reduce limits.</li>
+        <li>Stop for pedestrians at zebra crossings and at red lights.</li>
+        <li>Avoid collisions — they cost lives and points.</li>
+        <li>Australian signs are used for teaching — look out for "School Zone 40", "Give Way", and speed signs.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made for Australian road safety education. Hosted on GitHub Pages — enable Pages on the repository settings (branch: main / folder: /).</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
